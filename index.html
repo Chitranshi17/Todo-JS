@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+      * {
+        font-family: "Poppins", sans-serif;
+      }
+      .card {
+        border: none;
+      }
+
+      @media (max-width: 400px) {
+        html{
+          font-size: 50%;
+        }
+
+        @media (max-width : 200px) {
+          html{
+            font-size: 30%;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid" id="background">
+      <!-- <nav class="navbar bg-white" id="navbar"> -->
+      <!-- <div class="container-fluid"> -->
+      <!-- <span
+          class="navbar-brand mb-0 h1 text-light text-center w-100 fs-3 py-3 bg-black px-0"
+          id="nav-whiteHeading"
+          >Todo App</span
+        > -->
+      <!-- </div> -->
+      <!-- </nav> -->
+
+      <nav>
+        <div class="navbar bg-dark py-2">
+          <h4 class="text-light w-100 text-center">Todo App</h4>
+        </div>
+      </nav>
+
+      <h1 class="w-100 text-center my-5" id="heading">Today's Task</h1>
+
+      <div class="container">
+        <span class="py-5 my-5">
+          <!-- Dark and Light Mode -->
+          <a href="" class="btn btn-light rounded-0" id="light">Light Mode</a
+          ><a href="" class="btn btn-dark rounded-0" id="dark">Dark Mode</a>
+          <a href="" class="btn btn-danger rounded-0  float-end" id="remove">Remove All</a>
+        </span>
+
+        <form action="" class="my-3 py-5">
+          <input
+            type="text"
+            placeholder="Enter the Name"
+            class="form-control rounded-0 my-2 fs-5"
+            id="inputName"
+            required
+          />
+
+          <input
+            type="email"
+            placeholder="Enter the Email"
+            class="form-control rounded-0 my-2 fs-5"
+            id="inputEmail"
+            required
+          />
+
+          <select
+            name=""
+            id=""
+            class="form-control rounded-0 my-2 fs-5"
+            required
+          >
+            <option value="">Select Your City</option>
+            <option value="Indore">Indore</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Gova">Gova</option>
+            <option value="Rishikesh">Rishikesh</option>
+            <option value="Banglore">Banglore</option>
+          </select>
+
+          <!-- <input type="number" class="form-control rounded-0 my-2 fs-4" placeholder="Enter Phone number" id="inputNumber"> -->
+
+          <button class="form-control btn fs-5 btn-success">Save</button>
+        </form>
+
+        <div class="card" class="rounded-0 bg-black" id="card">
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
